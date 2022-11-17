@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Code Quiz</title>
+  </head>
+
+  <body>
+    <fieldset class="outer container" id="quiz">
+
+        <div class="top-bar">
+            <button id="view">View Highscores</button>
+            <p>Timer Clock: 00:00</p>
+        </div>
+
+        <div class="inner-container">
+
+            <header class="quiz-intro">
+                <h1>Welcome to the Quiz!</h1>
+                <p>Click begin to start quiz</p>
+                <button id="start">BEGIN</button>
+            </header>
+
+            <main>
+                <section class="question-screen">
+                    <h2 id="question">Question Here</h2>
+                    <ul>
+                        <li>
+                            <button>A</button>
+                            <input type="radio" name="answer" id="A" class="answer">
+                        </li>
+                        <li>
+                            <button>B</button>
+                            <input type="radio" name="answer" id="B" class="answer">
+                        </li>
+                        <li>
+                            <button>C</button>
+                            <input type="radio" name="answer" id="C" class="answer">
+                        </li>
+                        <li>
+                            <button>D</button>
+                            <input type="radio" name="answer" id="D" class="answer">
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="quiz-finish-screen">
+                    <h2>FINISHED!</h2>
+                    <p>Your Score: 00</p>
+                    <div>
+                        <label for="init">Enter Initials:</label>
+                        <input type="text">
+                        <button id="submit">Submit</button>
+                    </div>
+                </section>
+
+                <section class="highscore-screen">
+                    <h2>Highscores:</h2>
+                    <ol>
+                        <li>MP - 30</li>
+                        <li>MP - 30</li>
+                        <li>MP - 30</li>
+                        <li>MP - 30</li>
+                    </ol>
+                    <button id="back">Go Back</button>
+                    <button id="clear">Clear Highscores</button>
+                </section>
+            </main>
+
+        </div>
+
+    </fieldset>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* border: 1px solid blue; */
+    font-family: monospace;
+    
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+p {
+    color:azure;
+    font-size: 1.3em;
+}
+
+button {
+    outline: none;
+    background-color: rgb(195, 91, 91);
+    color: azure;
+    font-size: 1.3em;
+}
+
+button:hover {
+    background-color: azure;
+}
+
+.outer-container {
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+h1, h2 {
+    color: rgb(226, 129, 103)
+    
+    
+}
+
+li {
+    list-style: none;
+}
+
+.top-bar p {
+    float: right;
+}
+
+.inner-container {
+    background-color: black;
+    height: 100%;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quiz-intro {
+    margin-top: 30vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(66, 66, 107);
+}
+
+.quiz-intro p {
+    text-align: center;
+}
+
+.quiz-intro button {
+    display: block;
+    margin: auto;
+}
+
+main {
+    display: none;
+}
+
+.question-screen {
+    display: none;
+}
+
+.quiz-finish-screen {
+    display: block;
+}
+
+.highscore-screen {
+    display: block;
+}
+
+.highscore-screen ol {
+    overflow-y: scroll;
+    max-height: 200px;
+}
+
